@@ -23,7 +23,6 @@ video {
 	height: 100vh;
 	box-sizing: border-box;
 	padding-bottom: 100px;
-	z-index: 20px;
 }
 
 .main-container {
