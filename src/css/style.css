@@ -44,8 +44,10 @@ a {
 }
 
 .logo {
-	margin: 0 auto;
-	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	width: 363px;
 }
 
 .icon {
@@ -74,7 +76,7 @@ a {
 /*tabs*/
 .language__tabs {
 	text-align: center;
-	padding: 20px 0;
+	padding-top: 20px;
 }
 
 .tab {
@@ -105,7 +107,7 @@ a {
 }
 
 .main-menu {
-	margin-top: 20px;
+	margin-top: calc((100vh - 50px - 190px - 100px)/2 - 122px);
 }
 
 .menu__link {
@@ -164,7 +166,7 @@ a {
 /*footer*/
 .footer-wrapper {
 	position: absolute;
-	bottom: 20px;
+	bottom: 0;
 	min-width: 100%;
 }
 

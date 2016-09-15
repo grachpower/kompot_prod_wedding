@@ -2,4 +2,14 @@
   .menu__item {
     display: inline-block;
   }
+
+  .main-menu {
+    margin-top: calc((100vh - 50px - 190px - 100px)/2 - 13px);
+  }
+}
+
+@media screen and (max-height: 630px) and (max-width: 350px) {
+  .menu__link {
+    font-size: 40px;
+  }
 }
