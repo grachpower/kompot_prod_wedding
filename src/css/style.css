@@ -16,6 +16,7 @@ video {
   width: 100%; height: 100%;
   position: fixed;;
 	opacity: 0.2;
+	z-index: -1;
 }
 
 .page {
@@ -191,7 +192,7 @@ a {
 }
 
 .about {
-	text-align: left;
+	text-align: center;;
 }
 
 .contacts {

@@ -1,5 +1,5 @@
 /*iphone5,6 galaxy S5, */
-@media screen and (max-device-width: 375px)  {
+@media screen and (max-device-width: 375px) {
   body {
     font-size: 40px;
   }
@@ -30,6 +30,10 @@
 }
 
 @media screen and (max-height: 660px) {
+  body {
+    font-size: 18px;
+  }
+
   .menu__item {
     display: inline-block;
   }
