@@ -69,6 +69,12 @@ a {
 	transform: rotate(45deg);
 }
 
+.board {
+	height: 10px;
+	background-image: url(../noimages/parts/vertical.png);
+	background-position: center;
+}
+
 .label {
 	color: gray;
 }
@@ -108,7 +114,19 @@ a {
 
 .main-menu {
 	margin-top: calc((100vh - 50px - 190px - 100px)/2 - 122px);
+
+	/*border-width: 6px;
+	border-style: solid;*/
+	/*border-color: #000;*/
+	/*border-image: url(../noimages/parts/vertical.png);*/
+
+	background-image: url(../noimages/parts/back.png);
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+
 
 .menu__link {
 	display: inline-block;

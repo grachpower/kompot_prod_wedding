@@ -40,5 +40,11 @@
 
   .main-menu {
     margin-top: calc((100vh - 50px - 190px - 100px)/2 - 13px);
+    width: auto;
+  }
+
+  .board {
+    height: inherit;
+    width: 15px;
   }
 }
