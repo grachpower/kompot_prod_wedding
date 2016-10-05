@@ -10,7 +10,7 @@ html {
     font-size: 8px; } }
 
 body {
-  font-family: LinBiolinum, Arial, Helvetica, sans-serif;
+  font-family: Lora, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500; }
@@ -402,14 +402,9 @@ ul {
   list-style: none; }
 
 @font-face {
-  font-family: LinBiolinum;
-  src: url(../fonts/LinBiolinum_Rah.ttf);
-  font-weight: normal; }
-
-@font-face {
-  font-family: LinBiolinum;
-  src: url(../fonts/LinBiolinum_RBah.ttf);
-  font-weight: 700; }
+  font-family: Lora;
+  src: url(../fonts/Lora-Italic.ttf);
+  font-style: italic; }
 
 .icon {
   display: inline-block;
@@ -436,7 +431,8 @@ a {
 
 .title {
   text-align: center;
-  font-weight: normal; }
+  font-weight: 500;
+  font-style: italic; }
 
 .title_large {
   font-size: 5rem; }
