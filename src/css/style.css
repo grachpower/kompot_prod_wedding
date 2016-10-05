@@ -21,7 +21,13 @@ body {
   clear: both; }
 
 .address {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  position: relative;
+  animation-name: goup;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both; }
 
 .address__about {
   margin-top: 1.5rem;
