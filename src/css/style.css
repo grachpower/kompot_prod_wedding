@@ -174,7 +174,14 @@ body {
   width: 1.3rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  position: relative;
+  animation-name: left__column;
+  animation-duration: .8s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-delay: .8s;
+  animation-fill-mode: both; }
 
 .rhombus {
   display: inline-block;
