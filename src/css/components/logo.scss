@@ -3,6 +3,13 @@
 	margin-right: auto;
 	padding-top: 4rem;
 	width: 40%;
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: .5s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .4s;
+    animation-fill-mode: both;
 }
 
 .logo__img {

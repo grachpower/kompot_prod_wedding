@@ -43,7 +43,12 @@ body {
   height: 25vh;
   min-width: 100%;
   background-color: #df88b6;
-  z-index: -1; }
+  z-index: -1;
+  animation-name: goup;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both; }
   .kompot:before {
     content: "";
     width: 200%;
@@ -78,7 +83,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 4rem;
-  width: 40%; }
+  width: 40%;
+  position: relative;
+  animation-name: dropdown;
+  animation-duration: .5s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-delay: .4s;
+  animation-fill-mode: both; }
 
 .logo__img {
   width: 100%;
@@ -96,7 +108,9 @@ body {
 
 .map {
   margin-top: 3rem;
-  height: 50vh; }
+  height: 50vh;
+  background-image: url(../img/map_img.png);
+  background-position: center; }
 
 .menu {
   text-align: center;
@@ -107,7 +121,14 @@ body {
   display: inline-block; }
 
 .main-menu {
-  margin-top: calc((100vh - 36rem)/2 - 12rem); }
+  margin-top: calc((100vh - 36rem)/2 - 12rem);
+  position: relative;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: both; }
 
 .menu__link {
   display: inline-block;
@@ -298,6 +319,18 @@ body {
   animation-delay: .8s;
   animation-fill-mode: both; }
 
+@keyframes dropdown {
+  0% {
+    top: -100vh; }
+  100% {
+    top: 0; } }
+
+@keyframes goup {
+  0% {
+    bottom: calc(-25vh - 7rem); }
+  100% {
+    bottom: 0; } }
+
 .header {
   padding-top: 2rem; }
 
@@ -406,9 +439,3 @@ a {
   animation-timing-function: ease;
   animation-delay: .8s;
   animation-fill-mode: both; }
-
-@keyframes dropdown {
-  0% {
-    top: -100vh; }
-  100% {
-    top: 0; } }

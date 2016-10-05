@@ -10,6 +10,13 @@
 
 .main-menu {
 	margin-top: calc((100vh - 36rem)/2 - 12rem);
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: both;
 }
 
 .menu__link {
