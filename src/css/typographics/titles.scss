@@ -1,0 +1,32 @@
+.title {
+	text-align: center;
+	font-weight: normal;
+}
+
+.title_large {
+	font-size: 5rem;
+}
+
+.title_medium {
+	font-size: 3rem;
+}
+
+.content__title {
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+@keyframes dropdown {
+    0% {
+        top: -100vh;
+    }
+
+    100% {
+        top: 0;
+    }
+}

@@ -1,0 +1,50 @@
+@keyframes wave {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.kompot {
+    position: absolute;
+    bottom: 0;
+    height: 25vh;
+    min-width: 100%;
+    background-color: #df88b6;
+    z-index: -1;
+
+    &:before {
+        content: "";
+        width: 200%;
+        height: 7rem;
+        position: absolute;
+        top: -6.9rem;
+        background-color: transparent;
+        border-color: transparent;
+        background-image: url(../img/wave/wave.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+        animation-name: wave;
+        animation-duration: 15s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: -20rem;
+        background-image: url(../img/bank2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30rem;
+        height: 30rem;
+        transform: rotate(240deg);
+        transform: translate(50%, 0);
+    }
+}

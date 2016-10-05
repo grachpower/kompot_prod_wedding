@@ -1,0 +1,17 @@
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4rem;
+	width: 40%;
+}
+
+.logo__img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+    .logo {
+        width: 70%;
+    }
+}

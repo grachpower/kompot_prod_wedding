@@ -1,0 +1,18 @@
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	vertical-align: middle;
+}
+
+.icon-cross {
+	background-image: url(../img/cross.png);
+	width: 30px;
+	height: 30px;
+	opacity: 0.7;
+}
+
+.icon-cross:hover {
+	opacity: 1;
+}
