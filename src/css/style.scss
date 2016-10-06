@@ -13,6 +13,12 @@ html {
     }
 }
 
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 7px;
+    }
+}
+
 body {
 	font-family: Lora, Arial, Helvetica, sans-serif;
 	font-size: 1.6rem;

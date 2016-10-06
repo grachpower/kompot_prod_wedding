@@ -76,4 +76,11 @@ gulp.task('clean', function() {
   return del.sync('dist');
 });
 
-gulp.task('build', ['clean', 'sass', 'autoprefix', 'img', 'htmlmin', 'css-min']);
+gulp.task('build', ['clean', 'sass', 'autoprefix', 'img', 'htmlmin', 'css-min'], function() {
+    gulp.src('src/font-awesome/**/*')
+        .pipe(gulp.dest('dist/font-awesome/'));
+    gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts/'));
+    gulp.src('src/js/**/*')
+        .pipe(gulp.dest('dist/js/'));
+});
