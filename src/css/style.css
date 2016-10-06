@@ -267,22 +267,46 @@ body {
 
 .accordeon {
   margin-left: 2%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  position: relative;
+  animation-name: right__column;
+  animation-duration: .8s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-delay: .8s;
+  animation-fill-mode: both; }
 
 .accordeon__label {
   display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
-  background-color: #eee;
+  background-color: #df88b6;
   cursor: pointer; }
   .accordeon__label:hover {
     background-color: #ccc; }
-
-.accordeon__checkbox:checked + .accordeon__label {
-  background-color: #bbb; }
-
-.accordeon__checkbox:checked + .accordeon__label:hover {
-  background-color: #ccc; }
+  .accordeon__label:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    top: 0;
+    left: -10%;
+    height: 100%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-color: inherit; }
+  .accordeon__label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 10%;
+    height: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: inherit; }
 
 .accordeon__checkbox {
   display: none; }
@@ -290,15 +314,15 @@ body {
 .post__gallery {
   max-height: 0px;
   margin-top: 2rem;
-  transition: max-height 0.7s ease-in-out; }
+  transition: max-height .9s ease-in-out; }
 
 .accordeon__checkbox:checked ~ .post__gallery {
   display: block;
-  transition: max-height 0.7s ease-in-out;
+  transition: max-height .9s ease-in-out;
   max-height: 9999px; }
 
 .post__gallery__img {
-  max-height: 60vh; }
+  max-height: 50vh; }
 
 .separator {
   position: relative;
@@ -361,6 +385,47 @@ body {
   animation-timing-function: ease;
   animation-delay: .8s;
   animation-fill-mode: both; }
+
+.form__text__input {
+  background-color: transparent;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  outline: none;
+  border-bottom: 1px solid #000; }
+
+.form__controls {
+  margin-top: 2rem;
+  text-align: center; }
+
+.request__button {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #df88b6; }
+  .request__button:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    top: 0;
+    left: -10%;
+    height: 100%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-color: inherit; }
+  .request__button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 10%;
+    height: 100%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: inherit; }
+  .request__button:hover {
+    background-color: #ccc; }
 
 .contacts {
   text-align: center;
