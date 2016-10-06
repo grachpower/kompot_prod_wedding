@@ -1,4 +1,5 @@
 .post {
+    position: relative;
 	margin-top: 1.5rem;
 	text-align: center;
     overflow: hidden;
@@ -52,23 +53,68 @@
     }
 }
 
-.human__label {
+.post__label {
 	color: #808080;
 	font-size: 1.4rem;
 }
 
-.human__name {
+.post__name {
 	margin-top: .5rem;
 	font-size: 2.4rem;
 	font-weight: 700;
 }
 
-.human__about {
+.post__about {
 	font-size: 1.4rem;
 	margin-top: 1rem;
 }
 
-.human__img {
+.post__img {
 	width: 100%;
     height: auto;
+}
+
+.accordeon {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.accordeon__label {
+    display: block;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: #eee;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+.accordeon__checkbox:checked + .accordeon__label {
+    background-color: #bbb;
+}
+
+.accordeon__checkbox:checked + .accordeon__label:hover {
+    background-color: #ccc;
+}
+
+.accordeon__checkbox {
+    display: none;
+}
+
+.post__gallery {
+    max-height: 0px;
+    margin-top: 2rem;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.accordeon__checkbox:checked ~ .post__gallery {
+    display: block;
+    transition: max-height 0.7s ease-in-out;
+    max-height: 9999px;
+}
+
+.post__gallery__img {
+    max-height: 60vh;
 }
