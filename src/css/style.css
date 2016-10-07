@@ -392,7 +392,8 @@ body {
   border-top: none;
   border-right: none;
   outline: none;
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #000;
+  text-align: center; }
 
 .form__controls {
   margin-top: 2rem;
