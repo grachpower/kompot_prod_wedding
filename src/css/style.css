@@ -47,6 +47,12 @@ body {
   100% {
     transform: translate(0, 0); } }
 
+@keyframes bank {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-8deg); } }
+
 .kompot {
   position: absolute;
   bottom: 0;
@@ -79,15 +85,20 @@ body {
   .kompot:after {
     position: absolute;
     content: "";
-    right: 0;
+    right: -3rem;
     top: -20rem;
     background-image: url(../img/bank2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30rem;
+    width: 18rem;
     height: 30rem;
-    transform: rotate(240deg);
-    transform: translate(50%, 0); }
+    transform: translate(50%, 0);
+    animation-name: bank;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both; }
 
 .logo {
   margin-left: auto;
@@ -147,21 +158,21 @@ body {
   border-color: transparent; }
   .menu__link:before {
     content: "";
-    border-width: 1.2rem 1rem 1.2rem 0;
+    border-width: 1.2rem .9rem 1.2rem 0;
     border-color: transparent;
     border-style: solid;
     border-right-color: inherit;
     position: absolute;
-    left: -1rem;
+    left: -.9rem;
     top: 0; }
   .menu__link:after {
     content: "";
-    border-width: 1.2rem 0 1.2rem 1rem;
+    border-width: 1.2rem 0 1.2rem .9rem;
     border-color: transparent;
     border-style: solid;
     border-left-color: inherit;
     position: absolute;
-    right: -1rem;
+    right: -.9rem;
     top: 0; }
   .menu__link:hover {
     background-color: #df88b6;

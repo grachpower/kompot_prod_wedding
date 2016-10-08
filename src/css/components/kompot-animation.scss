@@ -7,6 +7,16 @@
     }
 }
 
+@keyframes bank {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
 .kompot {
     position: absolute;
     bottom: 0;
@@ -42,14 +52,19 @@
     &:after {
         position: absolute;
         content: "";
-        right: 0;
+        right: -3rem;
         top: -20rem;
         background-image: url(../img/bank2.png);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 30rem;
+        width: 18rem;
         height: 30rem;
-        transform: rotate(240deg);
         transform: translate(50%, 0);
+        animation-name: bank;
+        animation-duration: 1.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-fill-mode: both;
     }
 }
