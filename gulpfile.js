@@ -83,4 +83,6 @@ gulp.task('build', ['clean', 'sass', 'autoprefix', 'img', 'htmlmin', 'css-min'],
         .pipe(gulp.dest('dist/fonts/'));
     gulp.src('src/js/**/*')
         .pipe(gulp.dest('dist/js/'));
+    gulp.src('src/*.php')
+        .pipe(gulp.dest('dist/'));
 });
