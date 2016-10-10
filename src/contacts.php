@@ -129,8 +129,9 @@
 </body>
 </html>
 
+
 <?php
-// if (isset($_GET['submit'])) {
+if (isset($_POST['submit'])) {
     // echo "form submit";
     /* Осуществляем проверку вводимых данных и их защиту от враждебных
     скриптов */
@@ -160,5 +161,5 @@
     /* Отправляем сообщение, используя mail() функцию */
     // $from  = "From: $name <$mail> \r\n Reply-To: $mail";
     mail($myemail, "Заявка", $message_to_myemail, "From: a74026@lovesosna.mcdir.ru");
-// }
+}
 ?>
