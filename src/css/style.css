@@ -13,6 +13,10 @@ html {
   html {
     font-size: 7px; } }
 
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 12px; } }
+
 body {
   font-family: Lora, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -59,6 +63,7 @@ body {
   height: 25vh;
   min-width: 100%;
   background-color: #df88b6;
+  border-color: transparent;
   z-index: -1;
   animation-name: goup;
   animation-duration: 2s;
@@ -325,11 +330,11 @@ body {
 .post__gallery {
   max-height: 0px;
   margin-top: 2rem;
-  transition: max-height .9s ease-in-out; }
+  transition: max-height .9s ease-in-out 0s; }
 
 .accordeon__checkbox:checked ~ .post__gallery {
   display: block;
-  transition: max-height .9s ease-in-out;
+  transition: max-height .9s ease-in-out 0s;
   max-height: 9999px; }
 
 .post__gallery__img {

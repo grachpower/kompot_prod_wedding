@@ -132,12 +132,12 @@
 .post__gallery {
     max-height: 0px;
     margin-top: 2rem;
-    transition: max-height .9s ease-in-out;
+    transition: max-height .9s ease-in-out 0s;
 }
 
 .accordeon__checkbox:checked ~ .post__gallery {
     display: block;
-    transition: max-height .9s ease-in-out;
+    transition: max-height .9s ease-in-out 0s;
     max-height: 9999px;
 }
 
