@@ -1,0 +1,10 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@mixin path($name) {
+    $base-path: "../img/";
+    background-image: url($base-path + $name);
+}

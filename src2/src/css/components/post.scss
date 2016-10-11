@@ -1,0 +1,146 @@
+.post {
+    position: relative;
+	margin-top: 1.5rem;
+	text-align: center;
+    overflow: hidden;
+}
+
+.post__column {
+	display: inline-block;
+	width: 45%;
+	padding-left: 1%;
+	padding-right: 1%;
+	vertical-align: middle;
+}
+
+.post__column_left {
+	text-align: right;
+    position: relative;
+    animation-name: left__column;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+.post__column_right {
+	text-align: left;
+    position: relative;
+    animation-name: right__column;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+@keyframes left__column {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes right__column {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.post__label {
+	color: #808080;
+	font-size: 1.4rem;
+}
+
+.post__name {
+	margin-top: .5rem;
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+.post__about {
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+
+.post__img {
+	width: 100%;
+    height: auto;
+}
+
+.accordeon {
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    animation-name: right__column;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+.accordeon__label {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: #df88b6;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #ccc;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        top: 0;
+        left: -10%;
+        height: 100%;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+        background-color: inherit;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -10%;
+        width: 10%;
+        height: 100%;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+        background-color: inherit;
+    }
+}
+
+.accordeon__checkbox {
+    display: none;
+}
+
+.post__gallery {
+    max-height: 0px;
+    margin-top: 2rem;
+    transition: max-height .9s ease-in-out 0s;
+}
+
+.accordeon__checkbox:checked ~ .post__gallery {
+    display: block;
+    transition: max-height .9s ease-in-out 0s;
+    max-height: 9999px;
+}
+
+.post__gallery__img {
+    max-height: 50vh;
+}

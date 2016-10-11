@@ -15,10 +15,11 @@
 .rhombus {
 	display: inline-block;
 	border-width: .2rem;
+    border-radius: 50%;
 	border-color: transparent;
 	border-style: solid;
 	width: .5rem;
 	height: .5rem;
 	background-color: #bbb;
-	transform: rotate(45deg);
+	// transform: rotate(45deg);
 }

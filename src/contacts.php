@@ -20,6 +20,9 @@
                         <a href="aboutus.html" class="menu__link header__menu__link">О НАС</a>
                     </li>
                     <li class="menu__item">
+                        <a href="services.html" class="menu__link header__menu__link">УСЛУГИ</a>
+                    </li>
+                    <li class="menu__item">
                         <a href="portfolio.html" class="menu__link header__menu__link">ПОРТФОЛИО</a>
                     </li>
                     <li class="menu__item">
@@ -32,8 +35,8 @@
                 Заявка
               </h2>
                 <div class="separator"></div>
-                Привет! Меня зовут <input class="form__text__input" type="text" name="name" placeholder="Екатерина" required>, я представляю компанию <input class="form__text__input" type="text" name="company" placeholder="KOMPOT Wedding">, или пишу вам лично от себя, потому что планирую организовать <input class="form__text__input" type="text" name="event" placeholder="свадьбу" required>. Меня заинтересовали ваши проекты особенно <input class="form__text__input" type="text" name="interesting">. Я узнал о вас, благодаря <input class="form__text__input" type="text" name="informfrom">. Свяжитесь со мной, пожалуйста,
-                по номеру <input class="form__text__input" type="text" name="phone" placeholder="+7(012)345-67-89" required> ,или напишите мне на почтовый ящик <input class="form__text__input" type="text" name="mail" placeholder="kompot.prod@ya.ru" required>. Жду с нетерпением!
+                Привет! Меня зовут <input class="form__text__input" type="text" name="name" placeholder="Екатерина" required>, я пишу Вам, потому что планирую организовать <input class="form__text__input" type="text" name="event" placeholder="свадьбу" required>. Меня заинтересовали ваши проекты, особенно <input class="form__text__input" type="text" name="interesting">. Я узнал о вас, благодаря <input class="form__text__input" type="text" name="informfrom">. Свяжитесь со мной, пожалуйста,
+                по номеру <input class="form__text__input" type="text" name="phone" placeholder="+7(012)345-67-89" required>, или напишите мне на почтовый ящик <input class="form__text__input" type="text" name="mail" placeholder="kompot.wedding@ya.ru" required>. Жду с нетерпением!
                 <div class="form__controls">
                     <button class="request__button" type="submit" name="submit">Отправить заявку</button>
                 </div>
@@ -52,7 +55,7 @@
                 </p>
                 <p>
                     <span class="label">e-mail</span>
-                    <a href="mailto:kompot.prod@ya.ru?subject=Хочу лучшую свадьбу">kompot.prod@ya.ru</a>
+                    <a href="mailto:kompot.prod@ya.ru?subject=Хочу лучшую свадьбу">kompot.wedding@ya.ru</a>
                 </p>
             </div>
             <div class="rhombus__wrapper">
@@ -113,7 +116,7 @@
                             </p>
                             <p>
                                 <span class="label">e-mail</span>
-                                <a href="mailto:kompot.prod@ya.ru?subject=Хочу лучшую свадьбу">kompot.prod@ya.ru</a>
+                                <a href="mailto:kompot.wedding@ya.ru?subject=Хочу лучшую свадьбу">kompot.wedding@ya.ru</a>
                             </p>
                         </div>
                         <div class="development footer__column">
@@ -136,14 +139,13 @@ if (isset($_POST['submit'])) {
     /* Осуществляем проверку вводимых данных и их защиту от враждебных
     скриптов */
     $name = htmlspecialchars($_POST["name"]);
-    $company = htmlspecialchars($_POST["company"]);
     $event = htmlspecialchars($_POST["event"]);
     $interesting = htmlspecialchars($_POST["interesting"]);
     $informfrom = htmlspecialchars($_POST["informfrom"]);
     $phone = htmlspecialchars($_POST["phone"]);
     $mail = htmlspecialchars($_POST["mail"]);
     /* Устанавливаем e-mail адресата */
-    $myemail = "kompot.prod@ya.ru";
+    $myemail = "kompot.wedding@ya.ru";
     /* Проверяем заполнены ли обязательные поля ввода, используя check_input
     функцию */
     // $your_name = check_input($_POST["your_name"], "Введите ваше имя!");
@@ -156,7 +158,7 @@ if (isset($_POST['submit'])) {
     // show_error("<br /> Е-mail адрес не существует");
     // }
     /* Создаем новую переменную, присвоив ей значение */
-    $message_to_myemail = "Привет! Меня зовут $name, я представляю компанию $company, или пишу вам лично от себя, потому что планирую организовать $event. Меня заинтересовали ваши проекты особенно $name. Я узнал о вас, благодаря $informfrom. Свяжитесь со мной, пожалуйста,
+    $message_to_myemail = "Привет! Меня зовут $name, я пишу вам, потому что планирую организовать $event. Меня заинтересовали ваши проекты особенно $name. Я узнал о вас, благодаря $informfrom. Свяжитесь со мной, пожалуйста,
     по номеру $phone, или напишите мне на почтовый ящик $mail. Жду с нетерпением!";
     /* Отправляем сообщение, используя mail() функцию */
     // $from  = "From: $name <$mail> \r\n Reply-To: $mail";

@@ -21,7 +21,8 @@ body {
   font-family: Lora, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 500;
+  background: url(../img/BG-01.png); }
 
 .clearfix:after {
   content: "";
@@ -78,7 +79,7 @@ body {
     top: -6.9rem;
     background-color: transparent;
     border-color: transparent;
-    background-image: url(../img/wave/wave.png);
+    background-image: url(../img/wave/wave1.png);
     background-repeat: repeat-x;
     background-size: contain;
     animation-name: wave;
@@ -212,12 +213,12 @@ body {
 .rhombus {
   display: inline-block;
   border-width: .2rem;
+  border-radius: 50%;
   border-color: transparent;
   border-style: solid;
   width: .5rem;
   height: .5rem;
-  background-color: #bbb;
-  transform: rotate(45deg); }
+  background-color: #bbb; }
 
 .post {
   position: relative;
@@ -507,8 +508,7 @@ body {
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
-  padding-bottom: 100px;
-  background-color: #fdfaf7; }
+  padding-bottom: 100px; }
 
 .long-page__title {
   margin-top: 30px; }

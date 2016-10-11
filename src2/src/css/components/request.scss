@@ -1,0 +1,63 @@
+.request {
+	line-height: 3;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    animation-name: right__column;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+.form__text__input {
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.form__controls {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.request__button {
+    position: relative;
+    padding: 1.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #df88b6;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        top: 0;
+        left: -10%;
+        height: 100%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        background-color: inherit;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -10%;
+        width: 10%;
+        height: 100%;
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        background-color: inherit;
+    }
+
+    &:hover {
+        background-color: #ccc;
+    }
+}

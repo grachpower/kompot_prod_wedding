@@ -1,0 +1,16 @@
+.socials {
+	text-align: center;
+	margin: 1.5rem;
+}
+
+.socials__link {
+	display: inline-block;
+	margin: 0 1rem;
+	padding: .5rem;
+}
+
+.socials__link:hover {
+	background-color: #eee;
+	border-width: 2rem;
+	border-radius: 100%;
+}
