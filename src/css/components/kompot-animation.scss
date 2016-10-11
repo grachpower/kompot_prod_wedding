@@ -22,8 +22,6 @@
     bottom: 0;
     height: 25vh;
     min-width: 100%;
-    background-color: #df88b6;
-    border-color: transparent;
     z-index: -1;
     animation-name: goup;
     animation-duration: 2s;
@@ -34,12 +32,11 @@
     &:before {
         content: "";
         width: 200%;
-        height: 7rem;
+        height: 100%;
         position: absolute;
-        top: -6.9rem;
         background-color: transparent;
         border-color: transparent;
-        background-image: url(../img/wave/wave1.png);
+        background-image: url(../img/wave/wave3.png);
         background-repeat: repeat-x;
         background-size: contain;
         animation-name: wave;
@@ -54,7 +51,7 @@
         position: absolute;
         content: "";
         right: -3rem;
-        top: -20rem;
+        top: -15rem;
         background-image: url(../img/bank2.png);
         background-repeat: no-repeat;
         background-size: contain;
