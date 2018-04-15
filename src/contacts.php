@@ -35,8 +35,13 @@
                 Заявка
               </h2>
                 <div class="separator"></div>
-                Привет! Меня зовут <input class="form__text__input" type="text" name="name" placeholder="Екатерина" required>, я пишу Вам, потому что планирую организовать <input class="form__text__input" type="text" name="event" placeholder="свадьбу" required>. Меня заинтересовали ваши проекты, особенно <input class="form__text__input" type="text" name="interesting">. Я узнал о вас, благодаря <input class="form__text__input" type="text" name="informfrom">. Свяжитесь со мной, пожалуйста,
-                по номеру <input class="form__text__input" type="text" name="phone" placeholder="+7(012)345-67-89" required>, или напишите мне на почтовый ящик <input class="form__text__input" type="text" name="mail" placeholder="kompot.wedding@ya.ru" required>. Жду с нетерпением!
+                    Привет! Меня зовут <input class="form__text__input" type="text" name="name" placeholder="Екатерина" required>,
+                    я пишу Вам, потому что планирую организовать <input class="form__text__input" type="text" name="event" placeholder="свадьбу" required>.
+                    Меня заинтересовали ваши проекты, особенно <input class="form__text__input" type="text" name="interesting">.
+                    Я узнал о вас, благодаря <input class="form__text__input" type="text" name="informfrom">. Свяжитесь со мной, пожалуйста,
+                    по номеру <input class="form__text__input" type="tel" name="phone" placeholder="+7(012)345-67-89" required>,
+                    или напишите мне на почтовый ящик <input class="form__text__input" type="email" name="mail" placeholder="kompot.wedding@ya.ru" required>.
+                    Жду с нетерпением!
                 <div class="form__controls">
                     <button class="request__button" type="submit" name="submit">Отправить заявку</button>
                 </div>
@@ -69,7 +74,7 @@
           <div class="separator"></div>
           <div class="map" id="map"></div>
           <div class="address__about">
-            <p>Студия стильных свадеб «KOMPOT Wedding»</p>
+            <p>Мастерская уникальных свадеб «KOMПOT Wedding»</p>
             <p>Ул. Московская 29, ТОЦ Гермес, 6 этаж, офис 604</p>
           </div>
         </div>
@@ -80,7 +85,7 @@
             <footer class="footer">
                 <div class="footer__container">
                     <div class="socials">
-                        <a href="https://vk.com/kompot_prod" class="socials__link">
+                        <a href="https://vk.com/kompot.wedding" class="socials__link">
                             <i class="fa fa-vk" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100011265253659&ref=ts&fref=ts" class="socials__link">
@@ -92,22 +97,18 @@
                         <a href="https://www.youtube.com/channel/UC4rDwLSp3msPxoX_8obNMyQ" class="socials__link">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/kompot.production/" class="socials__link">
+                        <a href="https://www.instagram.com/kompot.wedding/" class="socials__link">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="socials__link">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="socials__link">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
                     </div>
                     <div class="footer__content clearfix">
                         <div class="about footer__column">
                             <p>
-                                <span class="label">Студия стильных свадеб</span> "KOMPOT Wedding"
+                                <span class="label">Мастерская уникальных свадеб</span> «КОМПОТ Wedding»
                             </p>
-                            <span class="label">Пенза 2016</span>
                         </div>
                         <div class="footer__contacts footer__column">
                             <p>
@@ -120,7 +121,7 @@
                             </p>
                         </div>
                         <div class="development footer__column">
-                            <span>Разработано @KompotProd</span>
+                            <span>Разработано @КОМПОТProd</span>
                         </div>
                     </div>
                 </div>
@@ -158,7 +159,8 @@ if (isset($_POST['submit'])) {
     // show_error("<br /> Е-mail адрес не существует");
     // }
     /* Создаем новую переменную, присвоив ей значение */
-    $message_to_myemail = "Привет! Меня зовут $name, я пишу вам, потому что планирую организовать $event. Меня заинтересовали ваши проекты особенно $name. Я узнал о вас, благодаря $informfrom. Свяжитесь со мной, пожалуйста,
+    $message_to_myemail = "Привет! Меня зовут $name, я пишу вам, потому что планирую организовать $event. Меня заинтересовали ваши проекты особенно $interesting
+    . Я узнал о вас, благодаря $informfrom. Свяжитесь со мной, пожалуйста,
     по номеру $phone, или напишите мне на почтовый ящик $mail. Жду с нетерпением!";
     /* Отправляем сообщение, используя mail() функцию */
     // $from  = "From: $name <$mail> \r\n Reply-To: $mail";

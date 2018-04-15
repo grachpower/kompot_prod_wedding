@@ -4,6 +4,12 @@
 	width: 20%;
 	margin: 1rem auto;
 	height: .1rem;
+    animation-name: left__column;
+    animation-duration: .8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
 }
 
 .separator:before {

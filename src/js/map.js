@@ -10,11 +10,11 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: mymap,
-    title: "KOMPOT Wedding"
+    title: "KOMПOT Wedding"
   });
 
   var contentString = '<div id="marker-description">'+
-  '<h4 class="title marker__title">KOMPOT Wedding</h4>'+
+  '<h4 class="title marker__title">KOMПOT Wedding</h4>'+
   '<div id="marker-description__content">'+
   '<span>г. Пенза, ул. Московская, 29</span>'+
   '</div>'+

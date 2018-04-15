@@ -1,8 +1,8 @@
 .rhombus__wrapper {
-	width: 1.3rem;
+	width: 2.5rem;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 1.5rem;
+	padding-top: 2rem;
     position: relative;
     animation-name: left__column;
     animation-duration: .8s;
@@ -14,12 +14,9 @@
 
 .rhombus {
 	display: inline-block;
-	border-width: .2rem;
-    border-radius: 50%;
-	border-color: transparent;
-	border-style: solid;
-	width: .5rem;
-	height: .5rem;
-	background-color: #bbb;
-	// transform: rotate(45deg);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-image: url(../img/cherry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
