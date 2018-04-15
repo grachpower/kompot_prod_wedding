@@ -7,7 +7,7 @@ const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const spritesmith = require('gulp.spritesmith');
-const imageop = require('gulp-image-optimization');
+const image = require('gulp-image');
 
 
 gulp.task('sprite', function () {
@@ -68,12 +68,8 @@ gulp.task('htmlmin', function () {
 });
 
 gulp.task('img', function () {
-    return gulp.src(['src/**/*.png','src/**/*.jpg','src/**/*.gif','src/**/*.jpeg'])
-        .pipe(imageop({
-            optimizationLevel: 5,
-            progressive: true,
-            interlaced: true
-        }))
+    return gulp.src('src/img/**/*')
+        .pipe(image())
         .pipe(gulp.dest('dist/img/'));
 });
 
