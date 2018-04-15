@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp sass-watch",
-    "build": "bulp build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
     "gulp-watch": "^4.3.9",
     "gulp.spritesmith": "^6.2.1",
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "gulp-image-optimization": "^0.1.3"
   }
 }
